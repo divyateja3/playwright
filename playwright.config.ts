@@ -16,29 +16,29 @@ export default defineConfig({
     timeout: 700000,
     reporter: `html`,
     
-    // projects: [
-    //   {
-    //     name: 'chromium',
-    //     use: {
-    //       ...devices['Desktop Chrome'],
-    //     },
-    //   },
-    //   {
-    //     name: 'Mobile Safari',
-    //     use: {
-    //       ...devices['iPhone 12 Pro'],
-    //     },
-    //   },
-    //   {
-    //     name: 'Tab Safari',
-    //     use: {
-    //       ...devices['iPad Pro 11'],
-    //     },
-    //   },
-    //   {
-    //     name: 'Mobile Chrome',
-    //     use: { ...devices['Pixel 5'] },
-    //   },
-    // ],
+    projects: [
+      {
+        name: 'chromium',
+        use: {
+          ...devices['Desktop Chrome'],
+        },
+      },
+      {
+        name: 'Mobile Safari',
+        use: {
+          ...devices['iPhone 12 Pro'],
+        },
+      },
+      {
+        name: 'Tab Safari',
+        use: {
+          ...devices['iPad Pro 11'],
+        },
+      },
+      // {
+      //   name: 'Mobile Chrome',
+      //   use: { ...devices['Pixel 5'] },
+      // },
+    ],
   
 });

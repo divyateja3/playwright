@@ -7,7 +7,7 @@ node_modules/
 
 # Playwrghit
 /test-results/
-/tests/*/
+!/tests/*/
 /playwright-report/
 /playwright/.cache/
 
