@@ -144,3 +144,62 @@ test('BuildLM', async ({ page }) => {
 });
 
 
+test('learn more 1', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id = "trending-learn-more-1"]');
+    await expect(page).toHaveURL(/fund-explorer/)
+}); 
+
+test('learn more 2', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id = "trending-learn-more-2"]');
+    await expect(page).toHaveURL(/fund-explorer/)
+}); 
+
+test('learn more 3', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id = "trending-learn-more-3"]');
+    await expect(page).toHaveURL(/form-adv/)
+}); 
+
+test('learn more 4', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id = "feature-cta-fund-360}"]');
+    await expect(page).toHaveURL(/fund-explorer/)
+}); 
+
+test('learn more 5', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id = "feature-cta-regulatory-filings}"]');
+    await expect(page).toHaveURL(/form-adv/)
+}); 
+
+test('learn more 6', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id = "feature-cta-integrate-data}"]');
+    await expect(page).toHaveURL(/analysis/)
+}); 
+
+test('learn more 7', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id="feature-cta-radient-partners}"]');
+    await expect(page).toHaveURL("http://test.radientanalytics.com/web/about/")
+}); 
+
+test('read more 1', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id="blog-read-more-1"]');
+    await expect(page).toHaveURL("https://info.radientanalytics.com/blog/radient-hfr-webinar")
+}); 
+
+test('read more 2', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id="blog-read-more-2"]');
+    await expect(page).toHaveURL("https://info.radientanalytics.com/blog/types-of-esg-funds-you-can-invest-in-2023")
+}); 
+
+test('read more 3', async ({ page }) => {
+    await page.goto('http://test.radientanalytics.com/', { waitUntil: 'networkidle' });
+    await page.click('a[data-test-id="blog-read-more-3"]');
+    await expect(page).toHaveURL("https://info.radientanalytics.com/blog/sub-adviser-due-diligence-with-radient")
+}); 

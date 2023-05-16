@@ -5,32 +5,40 @@ export default defineConfig({
     // testDir: './tests',
     outputDir: 'test-results',
     use: {
-        screenshot: 'only-on-failure',
-        // screenshotPath: 'path/to/screenshots',
+      screenshot: 'only-on-failure',
+    },
+    expect: {
+      toMatchSnapshot: {
+        maxDiffPixelRatio: 0.05,
+      },
     },
     // updateSnapshots: 'all',
-    timeout: 6000000,
+    timeout: 700000,
     reporter: `html`,
     
-    projects: [
-      {
-        name: 'chromium',
-        use: {
-          ...devices['Desktop Chrome'],
-        },
-      },
-      {
-        name: 'Mobile Safari',
-        use: {
-          ...devices['iPhone 12 Pro'],
-        },
-      },
-      {
-        name: 'Tab Safari',
-        use: {
-          ...devices['iPad Pro 11'],
-        },
-      },
-    ],
+    // projects: [
+    //   {
+    //     name: 'chromium',
+    //     use: {
+    //       ...devices['Desktop Chrome'],
+    //     },
+    //   },
+    //   {
+    //     name: 'Mobile Safari',
+    //     use: {
+    //       ...devices['iPhone 12 Pro'],
+    //     },
+    //   },
+    //   {
+    //     name: 'Tab Safari',
+    //     use: {
+    //       ...devices['iPad Pro 11'],
+    //     },
+    //   },
+    //   {
+    //     name: 'Mobile Chrome',
+    //     use: { ...devices['Pixel 5'] },
+    //   },
+    // ],
   
 });

@@ -1,0 +1,15 @@
+node_modules/
+.idea/
+/playwrite-testing.iml
+
+# Node modules
+node_modules/
+
+# Playwrghit
+/test-results/
+/tests/*/
+/playwright-report/
+/playwright/.cache/
+
+# Node package
+/package-lock.json

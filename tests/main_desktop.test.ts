@@ -61,63 +61,63 @@ redirectTests.forEach(({ name, menuButton, locatortag,expectedUrl }) => {
     });
 });    
 
-    const learnORreadmoreTests = [
+const learnORreadmoreTests = [
         {
-        name: 'Prime Brokers',
+        name: 'learn more 1',
         clickLocator: 'a[href="http://test.radientanalytics.com/form-adv/"]',
         val: 1,
         expectedUrl: /form-adv/
         },
         {
-        name: 'Hedge Funds',
+        name: 'learn more 2',
         clickLocator: 'a[href="http://test.radientanalytics.com/fund-explorer/"]',
         val: 1,
         expectedUrl: /fund-explorer/
         },
         {
-        name: 'Mutual Funds',
+        name: 'learn more 3',
         clickLocator: 'a[href="http://test.radientanalytics.com/fund-explorer/"]',
         val: 2,
         expectedUrl: /fund-explorer/
         },
         {
-        name: 'Fund360',
+        name: 'learn more 4',
         clickLocator: 'a[href="http://test.radientanalytics.com/fund-explorer/"]',
         val: 3,
         expectedUrl: /fund-explorer/
         },
         {
-        name: 'Regulatory Filings',
+        name: 'learn more 5',
         clickLocator: 'a[href="http://test.radientanalytics.com/form-adv/"]',
         val: 2,
         expectedUrl: /form-adv/
         },
         {
-        name: 'Own Data',
+        name: 'learn more 6',
         clickLocator: 'a[href="http://test.radientanalytics.com/analysis/"]',
         val: 1,
         expectedUrl: /analysis/
         },
         {
-        name: 'BuildLM',
+        name: 'learn more 7',
         clickLocator: 'a[href="http://test.radientanalytics.com/web/about/"]',
         val: 0,
         expectedUrl: 'http://test.radientanalytics.com/web/about/'
         },
         {
-        name: 'RadientAI+HFR',
+        name: 'read more 8',
         clickLocator: 'a[href="https://info.radientanalytics.com/blog/radient-hfr-webinar"]',
         val: 0,
         expectedUrl: 'https://info.radientanalytics.com/blog/radient-hfr-webinar'
         },
         {
-        name: 'ESGFunds',
+        name: 'read more 9',
         clickLocator: 'a[href="https://info.radientanalytics.com/blog/types-of-esg-funds-you-can-invest-in-2023"]',
         val: 0,
         expectedUrl: 'https://info.radientanalytics.com/blog/types-of-esg-funds-you-can-invest-in-2023'
         },
         {
-        name: 'Sub-Adviser',
+        name: 'read more 10',
         clickLocator: 'a[href="https://info.radientanalytics.com/blog/sub-adviser-due-diligence-with-radient"]',
         val: 0,
         expectedUrl: 'https://info.radientanalytics.com/blog/sub-adviser-due-diligence-with-radient'
