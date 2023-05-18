@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { devices } from 'playwright-core';
-    
+test.use(devices['iPhone 12 Pro'])
+
 const learnORreadmoreTests = [
     {
         name: 'learn more 1',

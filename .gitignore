@@ -4,12 +4,15 @@ node_modules/
 
 # Node modules
 node_modules/
-
+/tests/snapshot.test.ts-snapshots/
 # Playwrghit
 /test-results/
-!/tests/*/
+/tests/*/
 /playwright-report/
 /playwright/.cache/
 
 # Node package
 /package-lock.json
+extras/unrefactored.test.ts
+.gitignore
+.idea/playwright.iml
